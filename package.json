@@ -1,9 +1,14 @@
 {
   "name": "github-course-demo",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "author": "anoriqq <shota.yoshikawa@anoriqq.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "yarn build:dev && webpack-dev-server",
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development"
+  },
   "devDependencies": {
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
