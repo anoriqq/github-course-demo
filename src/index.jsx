@@ -3,57 +3,57 @@ import React from 'react';
 import styled from 'styled-components';
 
 const items = [
-    {
-        title: 'おすすめのアイテム',
-        items: [
-            {
-                title: 'aaa',
-            },
-            {
-                title: 'bbb',
-            },
-            {
-                title: 'ccc',
-            },
-            {
-                title: 'ddd',
-            },
-        ],
-    },
-    {
-        title: 'セール中のアイテム',
-        items: [
-            {
-                title: 'eee',
-            },
-            {
-                title: 'fff',
-            },
-            {
-                title: 'ggg',
-            },
-            {
-                title: 'hhh',
-            },
-        ],
-    },
-    {
-        title: 'ゲームのほしい物ランキング',
-        items: [
-            {
-                title: 'iii',
-            },
-            {
-                title: 'jjj',
-            },
-            {
-                title: 'kkk',
-            },
-            {
-                title: 'lll',
-            },
-        ],
-    },
+  {
+    title: 'おすすめのアイテム',
+    items: [
+      {
+        title: 'aaa',
+      },
+      {
+        title: 'bbb',
+      },
+      {
+        title: 'ccc',
+      },
+      {
+        title: 'ddd',
+      },
+    ],
+  },
+  {
+    title: 'セール中のアイテム',
+    items: [
+      {
+        title: 'eee',
+      },
+      {
+        title: 'fff',
+      },
+      {
+        title: 'ggg',
+      },
+      {
+        title: 'hhh',
+      },
+    ],
+  },
+  {
+    title: 'ゲームのほしい物ランキング',
+    items: [
+      {
+        title: 'iii',
+      },
+      {
+        title: 'jjj',
+      },
+      {
+        title: 'kkk',
+      },
+      {
+        title: 'lll',
+      },
+    ],
+  },
 ];
 
 const ItemBox = styled.div`
@@ -78,7 +78,7 @@ const Items = (props) => (
   <div>
     <div>{props.title}</div>
     <ItemList>
-        {props.items.map(Item)}
+      {props.items.map(Item)}
     </ItemList>
   </div>
 );
@@ -89,4 +89,4 @@ const App = () => (
   </div>
 );
 
-ReactDom.render(<App/>, document.getElementById('root'));
+ReactDom.render(<App />, document.getElementById('root'));
